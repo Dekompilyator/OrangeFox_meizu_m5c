@@ -22,6 +22,9 @@ DEVICE_PATH := device/meizu/m5c
 $(call inherit-product, vendor/omni/config/common.mk)
 $(call inherit-product, $(SRC_TARGET_DIR)/product/aosp_base.mk)
 
+# Inherit any OrangeFox-specific settings
+$(call inherit-product-if-exists, $(LOCAL_PATH)/fox_m5c.mk)
+
 ## Device identifier. This must come after all inclusions
 PRODUCT_NAME := omni_m5c
 PRODUCT_DEVICE := m5c

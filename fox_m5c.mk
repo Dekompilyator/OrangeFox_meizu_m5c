@@ -1,0 +1,14 @@
+ # General
+OF_MAINTAINER := Dekompilyator
+OF_TARGET_DEVICES := m5c
+FOX_BUILD_TYPE := Stable
+FOX_VERSION := R11.1_1.10
+FOX_MAINTAINER_PATCH_VERSION := $(date +"%Y%m%d")
+FOX_VANILLA_BUILD := 1
+
+# LEDS
+OF_CUSTOM_LEDS=1
+OF_USE_GREEN_LED=0
+OF_FLASHLIGHT_ENABLE=1
+OF_FL_PATH1= /sys/class/leds/hq-torch
+OF_LED_PATH1= /sys/class/leds/mx-led
